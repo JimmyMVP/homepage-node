@@ -15,5 +15,12 @@ $(document).ready(function () {
     );
 
 
+    $(".inactive").on("click", function(e) {
+
+
+    	$(this).removeClass("inactive").addClass("active")
+
+
+    });
 
 });
