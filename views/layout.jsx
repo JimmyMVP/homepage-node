@@ -20,6 +20,9 @@ export default class DefaultLayout extends React.Component {
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
             </head>
             <body>
                 <img src="/images/profile.jpg" id="profile-pic-sm" />
