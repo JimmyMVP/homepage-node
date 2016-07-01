@@ -4,8 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var hbs = require('hbs');
-var hbsHelpers = require("handlebars-helpers")({handlebars: hbs});
 
 
 var routes = require('./routes/index');
@@ -14,11 +12,8 @@ var projects =  require('./routes/projects')
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-
-//Configure Handlebars
-hbs.registerPartials(path.join(__dirname, "/views/partials"))
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
