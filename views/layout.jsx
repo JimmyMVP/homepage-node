@@ -22,9 +22,8 @@ export default class DefaultLayout extends React.Component {
 
             </head>
             <body>
-            <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+                <img src="/images/profile.jpg" id="profile-pic-sm" />
                 <Navbar />
-            </nav>
             <div id="main-container" className="container-fluid">
 
                 {this.props.children}
