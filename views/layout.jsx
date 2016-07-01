@@ -22,6 +22,9 @@ export default class DefaultLayout extends React.Component {
 
                 <script src="javascripts/projects.js" />
 
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
             </head>
             <body>
             <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
