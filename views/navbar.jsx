@@ -11,7 +11,7 @@ export default class Navbar extends React.Component {
 			<nav className="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
 			<div className="container">
 	        <div className="navbar-header">
-	            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+	            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
 	                    aria-expanded="false" aria-controls="navbar">
 	                <span className="sr-only">Toggle navigation</span>
 	                <span className="icon-bar"></span>

@@ -32,6 +32,7 @@ export default class DefaultLayout extends React.Component {
                 <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" />
                 <script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js" />
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/collapse.js" />
                 <script src="/javascripts/index.js" />
                 <script src="javascripts/projects.js" />
             </body>
