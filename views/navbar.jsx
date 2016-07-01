@@ -21,8 +21,8 @@ export default class Navbar extends React.Component {
 	        <img src="/images/profile.jpg" id="profile-pic-sm" />
 	        <div id="navbar" className="collapse navbar-collapse">
 	            <ul className="nav navbar-nav">
-	                <li className="inactive"><a href="/projects">Projects</a></li>
-	                <li className="inactive"><a href="/contact">Contact</a></li>
+	                <li ><a href="/projects">Projects</a></li>
+	                <li ><a href="/contact">Contact</a></li>
 	            </ul>
 	        </div>
 	    </div>)
