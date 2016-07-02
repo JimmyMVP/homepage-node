@@ -4,8 +4,7 @@ $(document).ready(function () {
 
     var offset = 40;
 
-    $('.navbar li a').click(function(event) {
-        event.preventDefault();
+    $('.navbar li a').click(function(e) {
         position = $($(this).attr('href')).position()
         var top = position.top
         $('html, body').animate({
@@ -34,5 +33,13 @@ $(document).ready(function () {
 
 
     });
+
+    $("h1").on("click", function(e) {
+
+        $(this).effect('bounce')
+
+
+    })
+
 
 });
