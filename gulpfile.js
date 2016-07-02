@@ -9,7 +9,7 @@ var livereload = require('gulp-livereload')
 var paths = {
   scripts: ['public/javascripts/**/*.js'],
   scss: ['public/stylesheets/**/*.scss'],
-  views: ['public/views/**/*.jsx']
+  views: ['./views/**/*.jsx']
 };
 
 // Not all tasks need to use streams
@@ -41,10 +41,10 @@ gulp.task('scripts', ['clean'], function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
+  livereload.listen()
   gulp.watch(paths.scripts, ['scripts', 'reload']);
   gulp.watch(paths.scss, ['scss', 'reload'])
   gulp.watch(paths.views, ['reload'])
-  livereload.listen()
 });
 
 gulp.task('nodemon', function() {
@@ -60,6 +60,7 @@ gulp.task('nodemon', function() {
 gulp.task('reload', function(){
 
     livereload.reload()
+    console.log('Changes, reloading page...')
 
 })
 
