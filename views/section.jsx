@@ -7,7 +7,7 @@ export default class Section extends React.Component {
 
 
         return (
-                <section id={this.props.id} className="jumbotron">
+                <section id={this.props.id} className="text-center container-fluid">
                     <h1>{this.props.title}</h1>
                     {this.props.children}
                 </section>

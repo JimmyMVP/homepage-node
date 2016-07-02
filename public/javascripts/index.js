@@ -2,6 +2,18 @@ var hoverColor = 'rgba(0, 0, 200, 0.3)'
 
 $(document).ready(function () {
 
+    var offset = 40;
+
+    $('.navbar li a').click(function(event) {
+        event.preventDefault();
+        position = $($(this).attr('href')).position()
+        var top = position.top
+        $('html, body').animate({
+        scrollTop: top - offset,
+        scrollLeft: 0,
+        }, 500, "easeInCubic");
+    });
+
 
     var leaveColor = $(".div-button").css("background-color")
 

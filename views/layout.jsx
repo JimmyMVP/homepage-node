@@ -12,7 +12,7 @@ export default class DefaultLayout extends React.Component {
             <html>
             <head>
                 <title>{this.props.title}</title>
-                <link rel='stylesheet' href='/stylesheets/style.css'/>
+                <link rel='stylesheet' href='/stylesheets/bundle.min.css'/>
                 <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" />
                 <link rel="stylesheet"  href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css" />
                 <script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js" />
@@ -26,14 +26,9 @@ export default class DefaultLayout extends React.Component {
 
             </head>
             <body data-spy="scroll" data-target=".navbar" data-offset="50">
-            <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
-                <Navbar />
-            </nav>
-            <div id="main-container" className="container-fluid">
-
+            <Navbar />
                 {this.props.children}
 
-            </div>
             </body>
             </html>)
 

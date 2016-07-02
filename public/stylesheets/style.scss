@@ -1,8 +1,9 @@
 @import "bootstrap.min.scss";
 
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 50px;
+
 }
 a {
   color: #00B7FF
@@ -11,24 +12,21 @@ a {
 //Define all the variables before requireing other stylesheets
 $opacity: 0.4;
 $blackTransparent: rgba(0,0,0, $opacity);
-//=require_tree .
 
 
 section {
   
   height: 100vh;
-  widows: 100vw;
-  background-color: blue;
-
+  width: 100vw;
+  background-color: rgba(0,0,0, $opacity);
+  box-shadow: 10px,10px,10px,10px,black;
 }
-
 
 p {
   color: white;
 }
 
 body {
-  background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/dark_wood.png");
   background-size: cover;
 }
 
