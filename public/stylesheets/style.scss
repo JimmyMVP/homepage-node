@@ -14,6 +14,15 @@ $blackTransparent: rgba(0,0,0, $opacity);
 //=require_tree .
 
 
+section {
+  
+  height: 100vh;
+  widows: 100vw;
+  background-color: blue;
+
+}
+
+
 p {
   color: white;
 }
@@ -21,6 +30,12 @@ p {
 body {
   background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/dark_wood.png");
   background-size: cover;
+}
+
+.jumbotron {
+
+  @extend .text-center;
+
 }
 
 .project-well {
