@@ -13,31 +13,27 @@ export default class DefaultLayout extends React.Component {
             <head>
                 <title>{this.props.title}</title>
                 <link rel='stylesheet' href='/stylesheets/style.css'/>
+                <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" />
                 <link rel="stylesheet"  href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css" />
+                <script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js" />
                 <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+                <script language="JavaScript" src="/javascripts/index.js" />
+                <script src="javascripts/projects.js" />
 
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
             </head>
-            <body>
-                <img src="/images/profile.jpg" id="profile-pic-sm" />
+            <body data-spy="scroll" data-target=".navbar" data-offset="50">
+            <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
                 <Navbar />
+            </nav>
             <div id="main-container" className="container-fluid">
 
                 {this.props.children}
 
             </div>
-                <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" />
-                <script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js" />
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/collapse.js" />
-                <script src="/javascripts/index.js" />
-                <script src="javascripts/projects.js" />
             </body>
             </html>)
 
