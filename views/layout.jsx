@@ -26,6 +26,7 @@ export default class DefaultLayout extends React.Component {
 
             </head>
             <body data-spy="scroll" data-target=".navbar" data-offset="50">
+            <img src="/images/profile.jpg" id="profile-pic-sm" />
             <Navbar />
                 {this.props.children}
 
