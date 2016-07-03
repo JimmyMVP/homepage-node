@@ -12,7 +12,7 @@ export default class DefaultLayout extends React.Component {
             <html>
             <head>
                 <title>{this.props.title}</title>
-                <link rel='stylesheet' href='/stylesheets/bundle.min.css'/>
+                <link rel='stylesheet' href='/stylesheets/bundle.min.css?version=1'/>
                 <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" />
                 <link rel="stylesheet"  href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css" />
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
