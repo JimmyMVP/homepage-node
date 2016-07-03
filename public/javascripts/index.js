@@ -8,14 +8,17 @@ $(document).ready(function () {
         href = $(this).attr('href')
         if(href.indexOf('#') != -1 && window.location.pathname == '/' ) {
             e.preventDefault()
-            var position = $(href.substring(1)).position()
+            var position = $(href).position()
             var top = position.top
             var top = position.top
             $('html, body').animate({
                 scrollTop: top - offset,
                 scrollLeft: 0,
             }, 500, "easeInCubic");
-        }
+            return
+        } else if(href.indexOf('#') != -1) {
+            window.location.href = '/' + href
+        } 
 
     });
 
