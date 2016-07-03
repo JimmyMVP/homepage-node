@@ -7,7 +7,7 @@ var sass = require('gulp-sass')
 var livereload = require('gulp-livereload')
 
 var paths = {
-  scripts: ['public/javascripts/**/*.js'],
+  scripts: ['public/javascripts/**/*.js', '!./public/javascripts/*bundle*'],
   scss: ['public/stylesheets/**/*.scss'],
   views: ['./views/**/*.jsx'],
   css: ['./public/stylesheets/**/*.css']
@@ -20,18 +20,19 @@ gulp.task('clean', function() {
   return del(['build']);
 });
 
-gulp.task('scss', function() {
+gulp.task('scss',  ['reload'] ,function() {
 
- return gulp.src('./public/stylesheets/**/*.scss')
+  return gulp.src('./public/stylesheets/**/*.scss')
    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
    .pipe(concat('bundle.min.css')).pipe(sourcemaps.write())
    .pipe(gulp.dest('public/stylesheets/'));
 
 }); 
 
-gulp.task('scripts', ['clean'], function() {
+gulp.task('scripts', ['reload'], function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
+
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
       .pipe(uglify())
@@ -43,7 +44,7 @@ gulp.task('scripts', ['clean'], function() {
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   livereload.listen()
-  gulp.watch(paths.scripts, ['scripts', 'reload']);
+  gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.scss, ['scss'])
   gulp.watch(paths.views, ['reload'])
   gulp.watch(paths.css, ['reload'])
@@ -62,10 +63,9 @@ gulp.task('nodemon', function() {
 gulp.task('reload', function(){
 
     livereload.reload()
-    console.log('Changes, reloading page...')
 
 })
 
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'scripts']);
+gulp.task('default', ['watch', 'scripts',"scss"]);
