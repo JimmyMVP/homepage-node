@@ -54,10 +54,10 @@ export default class TileCategories extends React.Component {
                         If you want to have a chat or further information, feel free to contact me.
                     </div>    
                     <div className="group">
-                        <a href="mailto:marin.vlastelicap@gmail.com" className="mail-i"><i className="fa fa-envelope-o"></i></a>
+                        <a href="mailto:marin.vlastelicap@gmail.com" className="mail-i"><i className="fa fa-envelope-o faa-spin animated-hover"></i></a>
                         <a href="https://de.linkedin.com/in/marin-vlastelica-pogančić-b6a31654
-                        " className="linkedin-i"><i className="fa fa-linkedin-square"></i></a>
-                        <a href="https://twitter.com/jimmy_mvp"><i className="fa fa-twitter"></i></a>
+                        " className="linkedin-i"><i className="fa fa-linkedin-square faa-spin animated-hover"></i></a>
+                        <a href="https://twitter.com/jimmy_mvp"><i className="fa fa-twitter faa-spin animated-hover"></i></a>
                     </div>
 
                     </Section>
