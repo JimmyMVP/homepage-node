@@ -8,7 +8,13 @@ $(document).ready(function(){
     $('.project-well').on("click", function() {
         $(this).find("p").slideToggle()
         console.log("Expanding well")
+        $(this).find("i").toggleClass("animated").toggleClass("faa-spin")
+
+
     });
+
+
+
 
 
 });
