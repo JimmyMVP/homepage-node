@@ -3,20 +3,7 @@
 //Define all the variables before requireing other stylesheets
 $opacity: 0.4;
 $blackTransparent: rgba(0,0,0, $opacity);
-//=require_tree .
 
-
-h1 {
-  color: white;
-}
-body {
-  color: white;
-}
-
-body {
-  background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/dark_wood.png");
-  background-size: cover;
-}
 
 .project-well {
 
@@ -24,6 +11,13 @@ body {
   $bgcolor: rgba(0,100,200, 0.8);
   background-color: $bgcolor;
   border-color: darken($bgcolor, 7%);
+
+}
+
+body {
+
+  background-color: black !important;
+
 
 }
 
@@ -63,68 +57,7 @@ fieldset {
 }
 
 
-.blueb {
-  @extend .btn, .btn-primary;
-}
-.redb {
-  @extend  .btn, .btn-danger;
-}
-.whiteb {
-  @extend  .btn, .btn-default;
-}
 
-.b {
-  @extend  .btn, .btn-default;
-}
-
-.main {
-  margin-top: 3em;
-}
-
-.table-classic {
-  @extend .table-striped, .table-bordered;
-
-  td, th
-  {
-    padding:0 15px 0 15px;
-  }
-
-
-}
-
-
-.big {
-  font-size: 4em;
-  color: #000000;
-}
-
-.vmidle {
-
-  position: absolute;
-  top: 50%;
-
-}
-
-.margin50 {
-
-  margin-top: 50%;
-
-}
-
-.cells3 {
-  @extend .col-lg-3, .col-md-3, .col-sm-3;
-}
-
-.center-content {
-  text-align: center;
-  margin-top: 12%;
-  color: black;
-}
-
-.offset3 {
-  @extend .col-md-offset-3, .col-lg-offset-3, .col-sm-offset-3;
-  height: 100%;
-}
 
 .div-button {
   @extend .container, .col-lg-6, .col-md-6, .col-sm-6;
@@ -139,14 +72,5 @@ fieldset {
 }
 
 
-.shadow {
-  background-color: rgba(0,0,0,0.4);
-}
 
-#main-container {
-  @extend  .shadow, .col-lg-offset-1, .col-md-offset-1, .col-lg-10, .col-md-10;
-  @extend .col-sm-12;
-  @extend  .col-xs-12;
-  height: 100vh;
-  padding-top: 10%;
-}
+
