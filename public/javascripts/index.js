@@ -5,12 +5,18 @@ $(document).ready(function () {
     var offset = 40;
 
     $('.navbar li a').click(function(e) {
-        position = $($(this).attr('href')).position()
-        var top = position.top
-        $('html, body').animate({
-        scrollTop: top - offset,
-        scrollLeft: 0,
-        }, 500, "easeInCubic");
+        href = $(this).attr('href')
+        if(href.indexOf('#') != -1 && window.location.pathname == '/' ) {
+            e.preventDefault()
+            var position = $(href.substring(1)).position()
+            var top = position.top
+            var top = position.top
+            $('html, body').animate({
+                scrollTop: top - offset,
+                scrollLeft: 0,
+            }, 500, "easeInCubic");
+        }
+
     });
 
 
@@ -18,7 +24,6 @@ $(document).ready(function () {
 
     $(".div-button").hover(
         function () {
-            console.log("Hovering")
             $(this).animate({backgroundColor: hoverColor }, 500)
         }, function() {
             $(this).stop().animate({backgroundColor: leaveColor}, 500)
