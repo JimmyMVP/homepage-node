@@ -16,12 +16,12 @@ export default class TileCategories extends React.Component {
                         Currently in the pursuit of a computer science master degree student at the Karlsruhe Institute of Technology in 
                         Karlsruhe, Germany specializing in the field of machine learning.
                         <div className="row group">
-                         <button className="btn btn-primary anim">Go to CV</button>
+                            <a className="btn btn-primary  faa-float animated vert" href="/cv">Go to CV</a>
                         </div>
                     </Section>
                     <Section id="sec2" title="Experience">
 
-                        I have experience in various machine learning frameworks like Spark MLLib, Theano, scikit-learn, Tensor Flow, this
+                        I have experience in various machine learning frameworks like Spark MLLib, Theano, scikit-learn, TensorFlow, this
                         is also my primary area of interest. I also have experience with distributed computing, front-end and back-end development
                         in Node and Rails. Here is a short list of the things I know about:
 
@@ -34,6 +34,7 @@ export default class TileCategories extends React.Component {
                             Java <br/>  
                             Databases <br/>                          
                             Theano <br/>
+                            TensorFlow <br/>
 
                         </div>
 
@@ -41,7 +42,7 @@ export default class TileCategories extends React.Component {
 
                            <h4>For more info:</h4>
 
-                                <button className="btn btn-primary  faa-float animated">Go to CV</button>
+                                <a className="btn btn-primary  faa-float animated vert" href="/cv">Go to CV</a>
 
 
                         </div>

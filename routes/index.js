@@ -12,5 +12,11 @@ router.get('/projects', function (req, res, next) {
 
 });
 
+router.get('/cv', function(req, res, next) {
+
+    res.redirect('/files/MarinVlastelicaCV.pdf');
+
+});
+
 
 module.exports = router;
