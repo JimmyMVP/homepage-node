@@ -59,6 +59,7 @@ export default class TileCategories extends React.Component {
                         <a href="https://de.linkedin.com/in/marin-vlastelica-pogančić-b6a31654
                         " className="linkedin-i"><i className="fa fa-linkedin-square faa-spin animated-hover"></i></a>
                         <a href="https://twitter.com/jimmy_mvp"><i className="fa fa-twitter faa-spin animated-hover"></i></a>
+                        <a href="https://github.com/JimmyMVP" className="github-i"><i className="fa fa-github faa-spin animated-hover"></i></a>
                     </div>
 
                     </Section>
