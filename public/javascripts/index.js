@@ -14,6 +14,18 @@ $(document).ready(function () {
   ga('send', 'pageview');
 
 
+
+
+    //Adding animations to dropdowns
+    // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+    $('.dropdown').on('show.bs.dropdown', function(e){
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // ADD SLIDEUP ANIMATION TO DROPDOWN //
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
     var offset = 40;
 
     $('.navbar li a').click(function(e) {

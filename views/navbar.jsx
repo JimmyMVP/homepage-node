@@ -28,6 +28,13 @@ export default class Navbar extends React.Component {
 	              	<li><a href="#sec2">Experience</a></li>
 	                <li><a href="#sec3">Contact</a></li>
 	               	<li><a href="#sec4">More</a></li>
+	               	<li className="dropdown">
+                          <a className="dropdown-toggle" type="button" data-toggle="dropdown"> Lab
+                          <span className="caret"></span></a>
+                          <ul className="dropdown-menu">
+                            <li><a href="#">ConflictFind</a></li>
+                          </ul>
+	               	</li>
 	               	<li><a href="/projects">Projects</a></li>
 
 	            </ul>
