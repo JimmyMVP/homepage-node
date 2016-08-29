@@ -1,13 +1,10 @@
 @import "bootstrap.min.scss";
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding-top: 50px;
 
 }
-a {
-  color: #00B7FF
-}
+
 
 //Define all the variables before requireing other stylesheets
 $opacity: 0.4;

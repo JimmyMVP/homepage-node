@@ -18,5 +18,9 @@ router.get('/cv', function(req, res, next) {
 
 });
 
+router.get('/blog', function(req, res, next) {
+    res.render('blog');
+});
+
 
 module.exports = router;
