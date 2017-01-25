@@ -12,7 +12,28 @@ export default class Projects extends React.Component {
 
     render() {
 
+
         return (<Layout>
+
+            <Project title="Blue Brain Project"> 
+            Currently working on EPFL for the team of Prof. Marc-Oliver Gewaltig in area of spiking neural networks machine learning
+            and brain simulation.
+        </Project>
+
+
+            <Project title="Decentralised Energy Exchange"> 
+            A project that won 1st place in Germany at the Microsoft Hack@Home hackathon. My team built an app running on the blockchain
+            that allows everyone to sell and buy energy without any centralised regularizing instance. This project is evolving currently
+            with a potential of getting funding for startup grounding.
+        </Project>
+
+
+        <Project title="3D Point Cloud Segmentation and Recognition at FZI"> 
+            I worked on segmentation and recognition of 3D pointclouds as unordered sets. The traditional approach would be to voxelize the
+            pointclouds, but I worked on a neural network that took a fixed size input of a set of unordered points which are sampled under a
+            probability distribution from the original pointcloud.  
+        </Project>
+
             <Project title="Autonomous Driving"> While being employed at the Forschungszentrum Informatik in Karlsruhe I Worked in the autonomous driving research department.
         The main projects I was working were laser mapping of environment and binding to geographical maps,
         traffic lane detection using DeepLearning.

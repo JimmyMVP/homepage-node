@@ -21,7 +21,7 @@ export default class TileCategories extends React.Component {
                     </Section>
                     <Section id="sec2" title="Experience">
 
-                        I have experience in various machine learning frameworks like Spark MLLib, Theano, scikit-learn, TensorFlow, this
+                        I have experience in various machine learning frameworks like Spark MLLib, Theano, scikit-learn, Tensorflow, this
                         is also my primary area of interest. I also have experience with distributed computing, front-end and back-end development
                         in Node and Rails. Here is a short list of the things I know about:
 
@@ -29,12 +29,12 @@ export default class TileCategories extends React.Component {
                             Machine learning<br/>
                             Apache Spark <br/>
                             Scikit-learn <br/>
+                            Theano <br/>
+                            Tensorflow <br/>
                             Node <br/>
                             Python <br/>
                             Java <br/>  
                             Databases <br/>                          
-                            Theano <br/>
-                            TensorFlow <br/>
 
                         </div>
 
